@@ -4,8 +4,11 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
+    "build": "rm -rf dist && yarn build:node && yarn build:web",
     "build:web": "webpack --config ./webpack.config-web.js",
-    "build:node": "tsc -p ./tsconfig-nodejs.json"
+	"build:node": "tsc -p ./tsconfig-nodejs.json",
+	"node:sync": "node ./runner-node-sync.js",
+	"node:async": "node ./runner-node-async.js"
   },
   "devDependencies": {
     "@purtuga/esm-webpack-plugin": "^1.2.1",

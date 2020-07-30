@@ -9,8 +9,6 @@ const {
 
 setWebContext();
 
-
-console.log('xxxxxxxxxxxxxxxxxxxxxxxx');
 const engine = new FbpEngine();
 engine.register(FbpLogger);
 engine.register(FbpRandonNumberGenerator)
