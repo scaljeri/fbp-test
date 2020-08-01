@@ -1,20 +1,18 @@
-import { nodejs } from '@scaljeri/fbp-core'; 
-
-const { 
+import {
 	setNodeJSContext,
 	setWorkerPath,
 	setNodePaths,
-	stateBasicAsync, 
+	stateBasicAsync,
 	FbpEngine,
 	FbpLogger,
-	FbpRandonNumberGenerator } = nodejs;
+	FbpRandonNumberGenerator } from '@scaljeri/fbp-core-nodejs'; 
 
 setNodeJSContext();
-setWorkerPath('./node_modules/@scaljeri/fbp-core/dist/nodejs/nodejs-node-worker-esm.js');
+setWorkerPath('./node_modules/@scaljeri/fbp-core-nodejs/dist/nodejs-node-worker-esm.js');
 // setNodePaths({ _: './node_modules/@scaljeri/fbp-core/dist/nodes' });
-setNodePaths({ _: '../nodes' });
+setNodePaths({ _: '../../fbp-core/dist/nodes' });
 
-const engine = new nodejs.FbpEngine();
+const engine = new FbpEngine();
 engine.register(FbpLogger);
 engine.register(FbpRandonNumberGenerator)
 engine.state = stateBasicAsync;

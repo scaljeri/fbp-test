@@ -1,16 +1,14 @@
-import { nodejs } from '@scaljeri/fbp-core'; 
-
-const { 
+import {
 	setNodeJSContext,
-	stateBasic, 
+	stateBasic,
 	FbpEngine,
 	FbpLogger,
-	FbpRandonNumberGenerator } = nodejs;
+	FbpRandonNumberGenerator } from '@scaljeri/fbp-core-nodejs'; 
 
 setNodeJSContext();
 
 
-const engine = new nodejs.FbpEngine();
+const engine = new FbpEngine();
 engine.register(FbpLogger);
 engine.register(FbpRandonNumberGenerator)
 engine.state = stateBasic;

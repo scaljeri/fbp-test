@@ -50,8 +50,8 @@
   "include": [
 	  "./src/**/*.ts",
   ],
-  "exclude":  [
-	  "src/web",
-	  "./node_modules"
-  ]
+//   "exclude":  [
+// 	  "src/web",
+// 	  "./node_modules"
+//   ]
 }

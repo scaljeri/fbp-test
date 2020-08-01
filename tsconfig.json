@@ -46,16 +46,13 @@
 	"strictFunctionTypes": true,
 	"strictPropertyInitialization": true,
 	"declaration": true,
-	"baseUrl": ".",
-	"paths": {
-		"@scaljeri/fbp-core": ["./node_modules/@scaljeri/fbp-core/src/web"]
-	}
-  },
-  "include": [
-	  "./src/**/*.ts",
-  ],
-  "exclude":  [
-	  "src/nodejs",
-	  "./node_modules"
-  ]
+	// "baseUrl": "."
+  }
+//   "include": [
+// 	  "./src/**/*.ts",
+//   ],
+//   "exclude":  [
+// 	  "src/nodejs",
+// 	  "./node_modules"
+//   ]
 }

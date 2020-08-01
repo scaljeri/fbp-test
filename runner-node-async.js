@@ -1,3 +1,3 @@
 require = require('esm')(module)
 
-require('./dist/main-async.js');
+require('./dist/nodejs/main-async.js');
